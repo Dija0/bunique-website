@@ -137,3 +137,38 @@ header{
 	text-decoration: underline;
 	font-family:  sans-serif;
 }
+#menu-bar{
+	display: none;
+}
+
+header label{
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+@media(max-width:991px) {
+
+	header label{
+		display: initial;
+	}
+     header .navbar{
+		border-top: 1px solid rgba(0, 0, 0, .1);
+		background: black;
+		position: absolute;
+		top: 0%; left: 0; right: 0;
+}
+	
+	header .bar{
+		display: none;
+		
+	}
+	header .navbar ul li {
+		
+		width: 100%;
+	}
+	#menu-bar:checked .bar{
+		display: initial;
+	}
+}
