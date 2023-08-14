@@ -55,6 +55,22 @@ header{
    border: 3px solid black;
 }
 
+.log{
+	position: relative;
+	left: 2%;
+	justify-content: space-around;
+	background-color: transparent;
+	border: 5px solid black;
+	box-shadow: 0px 0px 5px red;
+	border-radius: 5px;
+	color: white;
+	font-family: papyrus;
+	cursor: pointer;
+
+}
+.log:hover{
+	color: red;
+}
 .text {
 	transform: translate(-50%,-50%);
 	position: absolute;
@@ -109,6 +125,7 @@ header{
 	position: absolute;
 	top: 100%;
 	left: 100%;
+	cursor: pointer;
 }
 .btn:hover{
 	color: gray;
@@ -161,7 +178,7 @@ header label{
 }
 	
 	header .bar{
-		display: none;
+		display: none
 		
 	}
 	header .navbar ul li {
@@ -170,5 +187,8 @@ header label{
 	}
 	#menu-bar:checked .bar{
 		display: initial;
+	}
+	#menu-bar:checked{
+		display: none;
 	}
 }
