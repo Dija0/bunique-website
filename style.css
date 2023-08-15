@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html,body {
@@ -169,7 +170,12 @@ section:nth-child(odd){
 	background-color: red;
 }
 
-
+#home{
+	background-image: url(background-bunque-1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+} 
 #menu-bar{
 	display: none;
 }
