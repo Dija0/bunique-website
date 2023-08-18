@@ -9,4 +9,4 @@
  <i class="fa-solid fa-envelope"></i>  <!--email icon -->
 <i class="fa-brands fa-instagram"></i> <!--instagram icon -->
 //dont know what this is yet
-ghjiytgbnk
+ghjiytgb
