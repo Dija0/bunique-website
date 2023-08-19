@@ -163,21 +163,32 @@ section:nth-child(odd){
 	background-size: cover;
 	border: 5px solid black;
 	align-self: center;
+	position: relative;
+	top: -10%;
+	left: -10%;
 }
 #a-wrapper-1{
 	background-color: red;
-	width: 100px;
-	height: 100px;
+	width: 110px;
+	height: 110px;
 	border-radius: 150px;
+	
 }
 #a-wrapper-2{
 	background-color: white;
-	width: 150px;
-	height: 150px;
+	width: 105px;
+	height: 105px;
 	border-radius: 150px;
 	border: 10px solid white;
 	position: relative;
+	top: 3%;
+	left: 3%;
 	
+}
+#a-wrapper{
+	position: absolute;
+	left: 10%;
+	bottom: -20%;
 }
 
 
