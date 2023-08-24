@@ -168,7 +168,7 @@ section:nth-child(odd){
 	left: -10%;
 }
 #a-wrapper-1{
-	background-color: red;
+	background-color: maroon;
 	width: 110px;
 	height: 110px;
 	border-radius: 150px;
@@ -195,18 +195,18 @@ section:nth-child(odd){
 /*responsive menu bar*/
 #menu-bar{
 	display: none;
-}
-
-header label{
-	font-size: 14px;
-	color: white;
+	color: red;
 	cursor: pointer;
 	display: none;
+
 }
+
+
+	
 /*media query of menu bar*/
 @media(max-width:991px) {
 
-	header label{
+	#menu-bar{
 		display: initial;
 	}
      header .navbar{
