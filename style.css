@@ -193,23 +193,19 @@ section:nth-child(odd){
 
 
 /*responsive menu bar*/
-#menu-bar{
-	display: none;
+.checkbtn{
+	font-size: 30px;
 	color: red;
 	cursor: pointer;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	margin-top: -10px;
 	display: none;
 
 }
-.menu-drop-down{
-	background-color: transparent;
-	border: 2px solid maroon;
-	backdrop-filter: blur(20px);
-	width: 50%;
-	height: 50%;
-	position: absolute;
-	left: 50%;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+
+#menu-bar{
 	display: none;
 }
 
@@ -218,33 +214,43 @@ section:nth-child(odd){
 /*media query of menu bar*/
 @media(max-width:991px) {
 	
-	#menu-bar{
-		display: initial;
+	.checkbtn{
+		display: block;
 	}
-	.menu-drop-down{
-		
-	display: initial;
-		
-	}
-     header .navbar{
-		border-top: 1px solid rgba(0, 0, 0, .1);
-		background: black;
+
+	ul{
 		position: absolute;
-		top: 0%; left: 0; right: 0;
-}
-	
-	header .bar{
-		display: none
-		
-	}
-	header .navbar ul li {
-		
 		width: 100%;
+		height: 30vh;
+		background-color: transparent;
+		backdrop-filter: blur(30px);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
 	}
-	#menu-bar:checked .bar{
-		display: initial;
+	
+	
+   header .navbar ul li {
+		width: 100%;
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
 	}
-	#menu-bar:checked{
-		display: none;
+	#main nav ul li a  {
+		font-size: 20px;
+		color: black;
+		
 	}
+	#main nav ul li a.active,
+#main nav ul li a:hover{
+	background: none;
+	color: red;
+	border: 0px;
+}
+
+#menu-bar:checked ~ ul{
+	left: 0;
+}
+
 }

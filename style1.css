@@ -25,7 +25,7 @@ header{
 
 .wrapper{
     position: relative;
-    width: 400px;
+    width: 440px;
     height: 440px;
     background: transparent;
     border: 2px solid maroon;
@@ -36,7 +36,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 35%;
+    left: 32%;
     top: 15%;
     transition: ease-in;
 }
@@ -175,3 +175,41 @@ header{
 .login-register p a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 540px){
+    .wrapper{
+        left:0;
+        width: 50%;
+        height: 50%;
+        font-size: 1em;
+       
+    }
+    .wrapper .form-box{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .form-box h2{
+        font-size: 20px;
+        
+    }
+    .input-box label{
+        
+        font-size: 10px;
+       
+    }
+}
+
+@media (max-width: 820px){
+    .wrapper{
+        left:25%;
+        width: 50%px;
+        height: 50%;
+       
+    }
+    .wrapper .form-box{
+        width: 100%;
+        padding: 40px;
+    }
+}
+
