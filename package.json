@@ -1,0 +1,14 @@
+{
+  "name": "bunique-website",
+  "version": "1.0.0",
+  "description": "a client website for beauty and personal company",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dija Sanni",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^126.0.1"
+  }
+}
