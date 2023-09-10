@@ -68,18 +68,25 @@
 	<section id="contact">
 
 		<div class="contact-container">
-			<form id="contact-id">
+			<form id="contact-form" action="https:/formsubmit.co/olabisisanni1010@gmail.com" method="POST" target="_blank">
 				<h3>GET IN TOUCH</h3>
-				<input type="text" id="contact-name" placeholder="Your Name" required>
-				<input type="email" id="contact-email" placeholder="Your Email" required>
-				<textarea id="contact-body" rows="4" placeholder="How can we help you?"></textarea>
+				<input type="text" id="contact-name"  name="name" placeholder="Your Name" required>
+				<input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+				<input type="number" id="contact-phone" name="phone" placeholder="Your Phone" required>
+				<textarea id="contact-body" rows="4" name="msg" placeholder="Your Message"></textarea>
+				<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" >
+				<input type="hidden" name="_template" value="table">
 				<button type="submit">Send</button>
 			</form>
+		</div>
+		<div class="contact-footer">
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin"></i></a>
 		</div>
 	</section>
 
 </header>
-
 
 
 <script src="main.js"></script>
