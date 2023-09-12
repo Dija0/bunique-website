@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
 	padding: 0;
 	margin: 0;
@@ -10,7 +12,6 @@ html,body {
 	height: 100%;
 	
 }
-
 
 /*nav or task bar */
 #main{
@@ -150,7 +151,9 @@ section:nth-child(odd){
 }
 
 /*about section*/
-
+#about{
+	background: linear-gradient(#ffffff, red);
+}
 
 #a-logo{
 	width: 100px;
@@ -171,6 +174,7 @@ section:nth-child(odd){
 	width: 110px;
 	height: 110px;
 	border-radius: 150px;
+	box-shadow: 0px 0px 25px red;
 	
 }
 #a-wrapper-1:hover{
@@ -198,18 +202,12 @@ section:nth-child(odd){
 	justify-content: space-around;
 	border-radius: 20px;
 	overflow: hidden;	
+	box-shadow: 0px 0px 55px black;
 }
 #a-wrapper:hover{
-	box-shadow: ;
+	box-shadow: 0px 0px 35px whitesmoke;
 }
-#a1-wrapper:hover{
 
-	
-	background: transparent;
-	background-color: #ff5733;
-
-	
-}
 #a1-wrapper{
 
 	position: relative;
@@ -231,6 +229,22 @@ section:nth-child(odd){
 	padding: 25px;
 	font-size: 1rem;
 	font-family: papyrus;
+	box-shadow: 0px 0px 55px red;
+	
+}
+.about-back:hover{
+	box-shadow: 0px 0px 35px whitesmoke;
+}
+@media (max-width: 768px) {
+	.about-back {
+		width: 60%;
+		height: 30%;
+		background-color: aqua;
+	}
+	#a-wrapper {
+		width: 10%;
+		height: 30%;
+	}
 }
 .a-button{
 	position: relative;
@@ -247,6 +261,8 @@ section:nth-child(odd){
 .a-button:hover{
 	color: red;
 }
+
+
 /*responsive menu bar*/
 .checkbtn{
 	font-size: 30px;
@@ -263,7 +279,19 @@ section:nth-child(odd){
 #menu-bar{
 	display: none;
 }
-
+/*faqs section*/
+#faqs{
+	font-family: 'Poppins',sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #f5f8ff;
+	color: #000;
+}
 /*Contact section*/
 .contact-container{
 	width: 100%;
