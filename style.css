@@ -204,9 +204,7 @@ section:nth-child(odd){
 	overflow: hidden;	
 	box-shadow: 0px 0px 55px black;
 }
-#a-wrapper:hover{
-	box-shadow: 0px 0px 35px whitesmoke;
-}
+
 
 #a1-wrapper{
 
