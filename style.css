@@ -262,6 +262,108 @@ section:nth-child(odd){
 	color: red;
 }
 
+/* service section*/
+#services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	background: #222;
+	margin: 0;
+	
+
+}
+
+.s-container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 60px 0;
+	gap: 60px;
+
+}
+
+
+.s-container .s-box{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	background-color: #2e2e22;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.s-container .s-box .s-content{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+	padding: 0 20px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.s-container .s-box .s-content .s-icon{
+	color: var(--clr);
+	width: 80px;
+	height: 80px;
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+	background: #2e2e2e;
+	transition: 0.5s ease-in-out;
+}
+
+.s-container .s-box:hover .s-content .s-icon{
+	background:var(--clr);
+	color:  #2e2e2e;
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+}
+
+.s-container .s-box .s-content .s-text h3{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 500;
+	transition: 0.5s ease-in-out;
+}
+.s-container .s-box .s-content .s-text p{
+	color: #999;
+	transition: 0.5s ease-in-out;
+}
+
+.s-container .s-box:hover .s-content .s-text h3, .s-container .s-box:hover .s-content .s-text p{
+	color: #2e2e2e;
+}
+
+.s-container .s-box .s-content .s-text a{
+	position: relative;
+	background: var(--clr);
+	color: #2e2e2e;
+	padding: 8px 15px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	margin-top: 10px;
+	transition: 0.5s ease-in-out;
+}
+
+.s-container .s-box:hover .s-content .s-text a{
+	background: #2e2e2e;
+	color:var(--clr) ;
+}
 
 /*responsive menu bar*/
 .checkbtn{
@@ -340,6 +442,8 @@ section:nth-child(odd){
 .f-container .f-tab input:checked ~ label::after{
 	transform: rotate(135deg);
 	color: #fff;
+	
+
 }
 
 .f-container .f-tab label h2{
