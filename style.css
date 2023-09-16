@@ -177,9 +177,7 @@ section:nth-child(odd){
 	box-shadow: 0px 0px 25px red;
 	
 }
-#a-wrapper-1:hover{
-	box-shadow: 0px 0px 5px red;
-}
+
 #a-wrapper-2{
 	background-color: white;
 	width: 105px;
@@ -217,21 +215,26 @@ section:nth-child(odd){
 
 .about-back{
 	position: absolute;
-	left: 45%;
-	bottom: -100%;
+	left: 50%;
+	bottom: -80%;
 	width: 40%;
 	height: 50%;
-	background-color: maroon;
+	background-color: #000000;
 	border-radius: 20px;
 	color: #fff;
 	padding: 25px;
 	font-size: 1rem;
 	font-family: papyrus;
-	box-shadow: 0px 0px 55px red;
+	border: 5
+	px solid maroon;
+	
 	
 }
 .about-back:hover{
-	box-shadow: 0px 0px 35px whitesmoke;
+
+	background-color: maroon;
+	transition: .5s ease-in-out;
+	
 }
 @media (max-width: 768px) {
 	.about-back {
