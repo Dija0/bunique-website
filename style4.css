@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999; /* Ensure the alert appears above other elements */
+}
+
+/* Global styles */
+body {
+    background-image: url('background-bunque-1.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Box shadow for a card-like effect */
+    text-align: center;
+}
+
+.form {
+    max-width: 400px; /* Limit form width for better readability */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.form h1 {
+    color: #333; /* Dark heading color */
+    font-size: 28px; /* Larger font size for headings */
+    margin-bottom: 20px;
+}
+
+.form label {
+    color: #333; /* Dark label color */
+    font-size: 16px; /* Standard font size for labels */
+}
+
+.form-control {
+    background-color: #f8f8f8; /* Light gray background */
+    border: 1px solid #ddd; /* Light gray border */
+    color: #333; /* Dark text color */
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px; /* Increase spacing between inputs */
+    width: 100%;
+    font-size: 16px; /* Standard font size for input text */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #800000; /* Maroon border on focus */
+}
+
+.btn-primary {
+    background-color: #800000; /* Maroon button background color */
+    color: #fff; /* White button text color */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for buttons */
+    font-weight: 600; /* Bold font weight */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #333; /* Darker maroon on hover */
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.logout{
+position: relative;
+top: -40%;
+left:62% ;
+
+
+}
